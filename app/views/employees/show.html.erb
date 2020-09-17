@@ -1,1 +1,16 @@
-<h1>show</h1>
+<h1><%= @employee.first_name+" "+@employee.last_name %> </h1>
+<h2> Alias: </h2>
+<p> <%= @employee.alias %> </p>
+<h2> Title: </h2>
+<p> <%= @employee.title %> </p>
+<h2> Office: </h2>
+<p> <%= @employee.office %> </p>
+<h2> Employee's Dogs: </h2>
+<p> <%= @employee.dog.name %> </p>
+<img src="<%= @employee.img_url%>" alt= "Employee Picture">
+
+
+
+
+
+

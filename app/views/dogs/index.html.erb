@@ -1,1 +1,7 @@
-<h1>index</h1>
+<h1>All of Scranton's Dogs</h1>
+
+<p> <% @dogs.each do |dog| %> </p>
+<div> <%= link_to dog.name, dog_path(dog) %> </div>
+<p> <% end %> </p>
+
+

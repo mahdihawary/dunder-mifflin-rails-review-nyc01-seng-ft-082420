@@ -1,1 +1,6 @@
-<h1>index</h1>
+<h1>All of Dunder Mifflin's Employees</h1>
+
+<p> <% @employees.each do |employee| %> </p>
+<div> <%= link_to employee.first_name+" "+employee.last_name, employee_path(employee) %> </div>
+<p> <% end %> </p>
+
