@@ -22,5 +22,9 @@
     <%= f.text_field :office %>
     <br>
 
+     <%= f.label :dog %>
+    <%= f.collection_select (:employee, :dog_id, Dog.all, :id, :name) %>
+    <br>
+
     <div>
 <% end %>
